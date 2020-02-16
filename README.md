@@ -1,1 +1,1 @@
-# trading-bot for Binance
+# trading-bot for Binance (Futures and Spot)
