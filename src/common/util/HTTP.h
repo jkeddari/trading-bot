@@ -19,7 +19,6 @@ namespace util{
 
     public:
       void configure(std::string _uri, std::string _api_key, std::string _api_secret, std::string subapi);
-
       http::response<http::string_body> get(const std::string target);
 
     private:
