@@ -33,7 +33,7 @@ namespace util {
         req.set(http::field::host, uri.c_str());
         req.set(http::field::user_agent, BOOST_BEAST_VERSION_STRING);
 
-        std::cout << req << "\n";
+        //std::cout << req << "\n";
         
         ssl::context ctx{ssl::context::sslv23_client};
         ctx.set_default_verify_paths();
@@ -64,7 +64,7 @@ namespace util {
             req.set(http::field::content_type, "application/json");
         }
 
-        std::cout << req << "\n";
+        //std::cout << req << "\n";
 
         http::write(stream, req);
         boost::beast::flat_buffer buffer;
